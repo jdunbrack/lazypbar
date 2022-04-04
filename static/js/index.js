@@ -16,8 +16,8 @@ $('.info-button#about').click(() => {
 })
 
 $('.info-button#residents').click(() => {
-    $('#about-content').hide('slow');
-    $('#residents-content').show('slow');
+    $('#about-content').hide();
+    $('#residents-content').show();
     $('#donate-content').hide();
     
     $('.info-button#about').removeClass('active');
@@ -33,4 +33,8 @@ $('.info-button#donate').click(() => {
     $('.info-button#about').removeClass('active');
     $('.info-button#residents').removeClass('active');
     $('.info-button#donate').addClass('active');
+})
+
+$('#donate-custom-amount').select(() => {
+    $('#donate-custom').select();
 })

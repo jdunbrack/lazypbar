@@ -28,7 +28,7 @@
 
 #body {
     min-height: 500px;
-    width: 60%;
+    
     margin: 50px auto;
     padding-bottom: 100px;
 }
@@ -58,6 +58,8 @@
 }
 
 .content {
+    width: 80%;
+    margin: auto;
     text-align: center;
     font-family: "Montserrat", Arial;
 }
@@ -84,4 +86,87 @@ em {
 
 #change-charity {
     height: 180px;
+}
+
+#donate-content {
+    width: 100%;
+}
+
+.donate-pane {
+    display: inline-block;
+    max-height: 400px;
+    width: 45%;
+    margin: 50px 0px;
+    border: 1px dotted gray;
+    vertical-align: top;
+    padding: 50px 0px;
+    font-size: .9em;
+}
+
+#separator {
+    display: inline-block;
+    height: 300px;
+    width: 1px;
+    border: 1px solid black;
+    margin: 100px 0px;
+    
+}
+
+#paypal {
+    text-align: center;
+}
+
+#paypal form {
+    display: inline-block;
+    list-style: none;
+    width: 50%;
+    margin: 50px 0;
+    font-size: .85rem;
+    text-align: left;
+}
+
+#paypal input[type="radio"] {
+    margin: 10px;
+    text-align: left;
+}
+
+#paypal input[type="number"] {
+    height: 1.5rem;
+    width: 4em;
+    padding-left: 3px;
+    border-radius: 4px;
+    font-family: "Montserrat", Arial;
+}
+
+#donate-button {
+    display: inline-block;
+    width: 60px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: .5rem;
+}
+
+#smile ul {
+    display: inline-block;
+    width: 90%;
+    margin: 20px auto;
+}
+
+#smile li {
+    list-style: none;
+    margin: 20px auto;
+    
+}
+
+#smile li::before {
+    content: "℧";
+    padding: 10px;
+    font-weight: bold;
+}
+
+#smile li h4 {
+    display: inline-block;
 }
